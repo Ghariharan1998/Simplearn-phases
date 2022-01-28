@@ -1,0 +1,329 @@
+FACTORIAL
+
+import java.util.Scanner;
+public class pminteger {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter number:");
+		int number=sc.nextInt();
+		for(int i=2;i<number;i++) {
+			int count=0;
+			for(int j=2;j<=i/2;j++) {
+				if(i%j==0)
+					count++;
+			}
+			if(count==0)
+				System.out.print(i+" ");
+		}
+		
+
+	}
+
+}
+..........................................................................................................
+EVEN OR ODD
+
+
+import java.util.Scanner;
+public class even{
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in);
+		System.out.println("enter the value");
+		System.out.println("enter the m value");
+		int m=input.nextInt();
+		System.out.println("enter the n value");
+		int n=input.nextInt();
+		for(int i=m;i<=n;i++)
+		{
+			if(i%2==0)
+			{
+				System.out.println(i+ "the number is even");	
+			}
+			else {
+			System.out.println(i+ "the number is odd");
+		}
+		
+	}
+
+}
+}
+..............................................................................................................
+PRIME NUMBER
+
+public class prime {
+
+	public static void main(String[] args) {
+	int num = 80;
+	boolean flag = false;
+	for (int i =2; i <num/2; ++i) {
+		if(num%i == 0) {
+			flag = true;
+			break;
+		}
+	}
+	if (!flag)
+		System.out.println(num + " is a prime number ");
+	else
+		System.out.println(num + " is not a prime number ");
+	}
+
+}
+
+...........................................................................................................
+
+FIBONACCI
+
+import java.util.Scanner;
+public class fibonanicci {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter any number:");
+		int number=sc.nextInt();
+		int a=0;
+		int b=1; 
+	    int c;
+	    System.out.print(a+" "+b+" ");
+	    for(int i=2;i<number;i++) {
+	    	c=a+b;
+	    	System.out.print(c+" ");
+	    	a=b;
+	    	b=c;
+	    }
+	}
+
+}
+
+............................................................................................
+
+SWAPPING
+
+public class swaping {
+
+	public static void main(String[] args) {
+	int a=10;
+	int b=20;
+	a=a+b;
+	b=a-b;
+	a=a-b;
+	System.out.println(a+" "+b);
+	
+
+	}
+
+}
+
+...................................................................................................................
+
+1. Write a java program that simulates a traffic light. The program lets the user select one of
+three lights: red, yellow, or green with radio buttons. On entering the choice, 
+an appropriate message with “stop” or “ready” or “go” should appear in the console .
+Initially there is no message shown.
+
+
+
+import java.util.Scanner;
+public class signal {
+
+	public static void main(String[] args) {
+		System.out.println("1.red");
+		System.out.println("2.yellow");
+		System.out.println("3.green");
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter your choice:");
+		String choice=sc.nextLine();
+		if(choice.equals("red"))
+		System.out.println("stop");
+		if(choice.equals("yellow"))
+		System.out.println("ready");
+		if(choice.equals("green"))
+		System.out.println("go");
+		}
+
+}
+.........................................................................................................
+
+Create a class with a method which can calculate the sum of first n natural numbers which are divisible by 3 or 5.
+
+import java.util.Scanner;
+public class divisible {
+
+	public static int sumofnatural(int number) {
+		int sum=0;
+		for(int i=0;i<number;i++) {
+			if(i%3==0|| i%5==0) {
+				sum=sum+1;
+			}
+		}
+		return sum;
+		
+	}
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter number:");
+		int number=sc.nextInt();
+		int sum =sumofnatural(number);
+		System.out.println(sum);
+	}
+
+}
+
+........................................................................................................................
+
+Write a Java program that prompts the user for an integer and then prints out all the prime numbers up to that Integer?
+
+import java.util.Scanner;
+public class pminteger {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter number:");
+		int number=sc.nextInt();
+		for(int i=2;i<number;i++) {
+			int count=0;
+			for(int j=2;j<=i/2;j++) {
+				if(i%j==0)
+					count++;
+			}
+			if(count==0)
+				System.out.print(i+" ");
+		}
+		
+
+	}
+
+}
+
+.................................................................................................................................
+
+Create a class with a method to find the difference between the sum of the squares and the square of the 
+sum of the first n natural numbers.
+
+
+package ExamplePrograms;
+
+import java.util.Scanner;
+
+public class DiffOfSumOfSqsAndSqsofSum {
+
+  public static void main(String[] args) {
+    DiffOfSumOfSqsAndSqsofSum s = new DiffOfSumOfSqsAndSqsofSum();
+    s.diff();
+  }
+    void diff(){
+    int num,i,sum=0,sum1=0,result;
+    Scanner toscan = new Scanner(System.in);
+    System.out.println("Enter a limit: ");
+    num =toscan.nextInt();
+    for(i=1;i<=num;i++) {
+      sum = sum + i;
+    }
+    sum = sum * sum;
+    for(i=1;i<=num;i++) {
+      sum1 = (i*i) + sum1; 
+    }
+    result = sum -sum1;
+    System.out.println(result);
+  }
+}
+
+...............................................................................................................................
+
+
+Create a method to check if a number is a power of two or not
+
+Ex: 8 is a power of 2
+
+
+import java.util.Scanner;
+public class PowerOf2 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int number = sc.nextInt();
+		if(number != 0 && (Math.ceil((Math.log(number) / Math.log(2)))) == (Math.floor((Math.log(number) / Math.log(2))))) {
+			System.out.println("The given number is a power of 2");
+		}
+		else {
+			System.out.println("the given number is not a power of 2");
+		}
+	}
+}
+..............................................................................................................................
+
+A number is said to be an increasing number if no digit is exceeded by the digit to its left.
+For Example : 134468 is an increasing number
+
+
+import java.util.Scanner;
+public class IncreasingNumber
+{
+       public boolean checkNumber(int num)
+       {
+              boolean flag=false;
+              String str = String.valueOf(num);
+              int l = str.length();
+              for(int i=0;i<l-1;i++)
+              {
+                     if(str.charAt(i)<=str.charAt(i+1) )
+                           flag=true;
+                     else
+                           flag=false;
+              }
+              return flag;
+       }
+       public static void main(String[] ar)
+       {
+    	   IncreasingNumber p = new IncreasingNumber();
+              Scanner s = new Scanner(System.in);
+              System.out.println("Enter a number:");
+              int num = s.nextInt();
+              System.out.println("increasing number: "+p.checkNumber(num));
+       }
+}
+
+
+...................................................................................................................
+
+Create a method to check if a number is an increasing number
+
+
+package ExamplePrograms;
+
+import java.util.Scanner;
+
+public class CheckTheNumberIsIncOrder {
+
+  public static void main(String[] args) {
+    CheckTheNumberIsIncOrder s = new CheckTheNumberIsIncOrder();
+    s.IncOrder();
+
+  }
+  void IncOrder() {
+    int num;
+         boolean flag = false;
+         Scanner scanner = new Scanner(System.in);
+         System.out.println("Enter a number : ");
+         num = scanner.nextInt();
+         int currentDigit = num % 10;
+         num = num/10;
+         while(num>0){
+             if(currentDigit <= num % 10){
+                 flag = true;
+                 break;
+             }
+
+             currentDigit = num % 10;
+             num = num/10;
+         }
+         if(flag){
+             System.out.println("Digits are not in increasing order.");
+         }else{
+             System.out.println("Digits are in increasing order.");
+         }
+  }
+
+}
+...............................................................................................................
+

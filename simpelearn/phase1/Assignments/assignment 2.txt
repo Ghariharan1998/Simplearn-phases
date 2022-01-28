@@ -1,0 +1,65 @@
+
+                                  ASSIGNMENT 2
+
+
+1)ANS
+
+
+package assign2;
+
+import java.util.Scanner;
+
+public class palindrome {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter a string to check wether it is palindrome or not");
+		String str = sc.nextLine();
+		String reversedString ="";
+		for(int i=str.length()-1 ; i>=0; i--) {
+			reversedString += str.charAt(i);
+		}
+		if(str.equals(reversedString)) {
+			System.out.println(str + " is a palindrome");
+		}
+		else {
+			System.out.println(str+" is a palindrome");
+		}
+		
+		}
+
+
+
+.............................................................................................................
+
+
+2)
+
+
+
+
+package assign2;
+import java.util.Scanner;
+public class strg {
+
+	public static void main(String[] args) {
+		System.out.print("Please Enter The Value : ");
+	    Scanner sc = new Scanner(System.in);
+	    String str = sc.nextLine();
+
+	    for(int i = 0; i <str.length();i++) {
+	        if(str.charAt(i)==' ') { // whenever it found space it'll create separate words from string
+	            System.out.println();
+	            continue;
+	        }
+	        System.out.print(str.charAt(i));
+	    }
+	    sc.close();
+	}
+
+	}
+
+
+
+
+}
