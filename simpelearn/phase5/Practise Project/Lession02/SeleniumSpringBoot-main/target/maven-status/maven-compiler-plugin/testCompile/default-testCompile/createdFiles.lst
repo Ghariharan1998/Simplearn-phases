@@ -1,0 +1,4 @@
+com\demo\seleniumspring\googletests\GoogleSearch1Test.class
+com\demo\seleniumspring\SpringBaseTestNGTest.class
+com\demo\seleniumspring\SeleniumSpringApplicationTests.class
+com\demo\seleniumspring\googletests\GoogleSearch2Test.class

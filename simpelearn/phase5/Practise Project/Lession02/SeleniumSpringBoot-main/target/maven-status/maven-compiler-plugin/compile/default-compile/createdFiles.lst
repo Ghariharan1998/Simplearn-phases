@@ -1,0 +1,14 @@
+com\demo\seleniumspring\config\RemoteWebDriverConfig.class
+com\demo\seleniumspring\page\google\SearchResult.class
+com\demo\seleniumspring\page\Base.class
+com\demo\seleniumspring\config\WebDriverConfig.class
+com\demo\seleniumspring\page\google\GooglePage.class
+com\demo\seleniumspring\config\WebDriverWaitConfig.class
+com\demo\seleniumspring\SeleniumSpringApplication.class
+com\demo\seleniumspring\util\ScreenShotUtil.class
+com\demo\seleniumspring\config\BrowserScopePostProcessor.class
+com\demo\seleniumspring\config\BrowserScopeConfig.class
+com\demo\seleniumspring\page\google\SearchComponent.class
+com\demo\seleniumspring\annotation\Page.class
+com\demo\seleniumspring\annotation\PageFragment.class
+com\demo\seleniumspring\config\BrowserScope.class
